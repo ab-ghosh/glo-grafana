@@ -8,7 +8,7 @@ go 1.26.4
 replace github.com/docker/docker => github.com/moby/moby v23.0.18+incompatible
 
 // Override containerd to fix CVE-2024-25621 (local privilege escalation)
-replace github.com/containerd/containerd => github.com/containerd/containerd v1.7.33
+replace github.com/containerd/containerd => github.com/containerd/containerd v1.7.34
 
 // contains openapi encoder fixes. remove ASAP
 replace cuelang.org/go => github.com/grafana/cue v0.0.0-20230926092038-971951014e3f // @grafana/grafana-as-code
@@ -193,7 +193,7 @@ require (
 	go.uber.org/atomic v1.11.0 // @grafana/alerting-backend
 	go.uber.org/goleak v1.3.0 // @grafana/grafana-search-and-storage
 	gocloud.dev v0.25.0 // @grafana/grafana-app-platform-squad
-	golang.org/x/crypto v0.51.0 // @grafana/grafana-backend-group
+	golang.org/x/crypto v0.52.0 // @grafana/grafana-backend-group
 	golang.org/x/exp v0.0.0-20240416160154-fe59bbe5cc7f // @grafana/alerting-backend
 	golang.org/x/mod v0.35.0 // @grafana/grafana-backend-group
 	golang.org/x/net v0.55.0 // @grafana/oss-big-tent @grafana/partner-datasources
